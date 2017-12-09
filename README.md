@@ -31,6 +31,10 @@
     this.db.get('test').on().subscribe(data => { ... });
 } `
 
+## Testing with this repo
+- Clone it
+- Run `ng serve` or with AOT compiling: `npm run serve-aot`
+
 ## ToDo
 
 - List and object Observable classes, meant for, obviously, listening to changes on a single node or a list of nodes (using gun.map) in a typed way
