@@ -17,11 +17,6 @@
 - [GitHub](https://github.com/funkizer/gun-angular)
 - [Twitter: @kooditonttu](https://twitter.com/kooditonttu)
 
-## ChangeLog
-- Published what's in src/app/gun-angular to npm. To try: 
-- In your AppModule or other module you want to use GunAngular in, add this:
- `GunAngularModule.forRoot({ peers: [location.origin + '/gun'] })`
-
 ## Using
 - Run `npm install gun-angular --save` in your Angular project root folder.
 - In your (App)Module, add import:
