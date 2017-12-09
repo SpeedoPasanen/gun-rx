@@ -1,5 +1,5 @@
 # GunAngular
-Learning Gun DB while wrapping it in Angular / Typescript with RXJS Observables.
+Learning Gun DB while wrapping it in Angular / RX / Typescript with RXJS Observables.
 
 [![Join the chat at https://gitter.im/gun-angular/Lobby](https://badges.gitter.im/gun-angular/Lobby.svg)](https://gitter.im/gun-angular/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
@@ -14,7 +14,7 @@ Learning Gun DB while wrapping it in Angular / Typescript with RXJS Observables.
 - [Angular](https://angular.io)
 - [Related videos in Youtube](https://www.youtube.com/results?search_query=mark+nadal)
 - [Gitter](https://gitter.im/gun-angular)
-- [GitHub](https://github.com/funkizer/gun-angular)
+- [GitHub](https://github.com/funkizer/gun-rx)
 - [Twitter: @funkizer](https://twitter.com/funkizer)
 
 ## Using
