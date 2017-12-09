@@ -1,10 +1,10 @@
 {
-  "name": "gun-angular",
+  "name": "gun-rx",
   "version": "0.0.004",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/funkizer/gun-angular"
+    "url": "https://github.com/funkizer/gun-rx"
   },
   "scripts": {
     "ng": "ng",
