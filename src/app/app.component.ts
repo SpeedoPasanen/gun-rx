@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { GunAngularService } from './gun-angular/gun-angular.service';
 import { OnInit } from '@angular/core/src/metadata/lifecycle_hooks';
 import { GunRef } from './gun-angular/gun-ref';
 
