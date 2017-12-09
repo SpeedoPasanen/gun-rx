@@ -34,6 +34,9 @@ export class GunRef {
     back(): GunRef {
         return GunRef.create(this.gun.back());
     }
+    map(): GunRef {
+        return GunRef.create(this.gun.map());
+    }
     val<T>(): Observable<T> {
         return Observable.create(o => {
             this.gun.val((data, key, at, ev) => {
