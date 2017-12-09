@@ -32,8 +32,8 @@
 } `
 
 ## Testing with this repo
-- Clone it
-- Run `ng serve` or with AOT compiling: `npm run serve-aot`
+- `git clone https://github.com/funkizer/gun-angular`
+- `ng serve` or with AOT compiling: `npm run serve-aot`
 
 ## ToDo
 
