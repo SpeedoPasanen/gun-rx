@@ -56,6 +56,7 @@ export class GunRef {
                 o.next(this.extractData(data));
             });
             return () => {
+                // Caller unsubscribed
                 stopped = true;
             };
         });

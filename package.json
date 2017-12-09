@@ -1,6 +1,6 @@
 {
   "name": "gun-angular",
-  "version": "0.0.002",
+  "version": "0.0.003",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -14,7 +14,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "pack": "ng-packagr -p ng-package.json"
+    "pack": "ng-packagr -p ng-package.json",
+    "publish": "ng-packagr -p ng-package.json && npm publish dist"
   },
   "author": "@funkizer",
   "private": false,
