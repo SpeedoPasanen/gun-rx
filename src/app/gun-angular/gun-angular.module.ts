@@ -14,7 +14,7 @@ export class GunAngularModule {
   static forRoot(config: GunAngularOptions = new GunAngularOptions()) {
     return {
       ngModule: GunAngularModule,
-      providers: [{ provide: GunRef, useValue: new GunRef(new Gun()).opt(config) }]
+      providers: [GunRef, { provide: 'gunAngularOptions', useValue: config }]
     };
   }
 }

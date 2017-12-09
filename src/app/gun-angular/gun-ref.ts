@@ -2,24 +2,34 @@ import * as Gun from 'gun/gun';
 import { Observable } from 'rxjs/Observable';
 import * as _ from 'lodash';
 import { GunAngularOptions } from './gun-angular-options';
+import { Inject, Injectable } from '@angular/core';
+@Injectable()
 export class GunRef {
     gun: Gun;
     stopped = false;
-    constructor(gun: Gun) {
-        this.gun = gun;
+    constructor(
+        @Inject('gunAngularOptions') options?
+    ) {
+        this.gun = new Gun();
+        if (!!options) { this.gun.opt(options); }
+    }
+    static create(gun: Gun) {
+        const newRef = new GunRef();
+        newRef.gun = gun;
+        return newRef;
     }
     opt(options: GunAngularOptions): GunRef {
         this.gun.opt(options);
         return this;
     }
     get(key: string): GunRef {
-        return new GunRef(this.gun.get(key));
+        return GunRef.create(this.gun.get(key));
     }
     put(data: any): GunRef {
-        return new GunRef(this.gun.put(data));
+        return GunRef.create(this.gun.put(data));
     }
     set(data: any): GunRef {
-        return new GunRef(this.gun.set(data));
+        return GunRef.create(this.gun.set(data));
     }
     val<T>(): Observable<T> {
         return Observable.create(o => {
