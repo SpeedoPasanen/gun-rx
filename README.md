@@ -4,9 +4,28 @@
 
 - Learning [Gun](http://gun.js.org) DB while wrapping it in Angular / Typescript with RXJS Observables.
 - Very early stage, don't use in production (you shouldn't probably use Gun yet either), but feel free to look, play around, and give me your feedback.
-- Some point in the future, planning to publish as a separate module in npm (what's now in src/app/gun-angular).
 - Wraps (at some point) all gun methods in the typed world, easy to use with Angular or any other or no framework.
 - "Pet project" developed on limited free time.
+
+## ChangeLog
+- Published what's in src/app/gun-angular to npm. To try: 
+- In your AppModule or other module you want to use GunAngular in, add this:
+
+ `GunAngularModule.forRoot({ peers: [location.origin + '/gun'] })
+
+## Using
+- Run `npm install gun-angular --save` in your Angular project root folder.
+- In your (App)Module, add import:
+`
+  imports: [
+   GunAngularModule.forRoot({ peers: [location.origin + '/gun'] }),
+    // ...
+  ],
+`
+- Inject to a component:
+`  constructor(private db: GunRef) { 
+    this.db.get('test').on().subscribe(data => { ... });
+} `
 
 ## ToDo
 

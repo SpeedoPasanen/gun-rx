@@ -12,7 +12,7 @@
     "pack": "ng-packagr -p ng-package.json"
   },
   "author": "@funkizer",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@angular/animations": "^5.0.0",
     "@angular/common": "^5.0.0",
