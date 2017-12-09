@@ -1,6 +1,8 @@
 # GunAngular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.0.
+## What is this?
+- Learning Gun DB while wrapping it in Angular / Typescript with RXJS Observables.
+- Very early stage, don't use, but feel free to look, play around, and give me your feedback.
 
 ## Development server
 
