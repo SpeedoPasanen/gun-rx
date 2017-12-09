@@ -3,6 +3,11 @@ Learning Gun DB while wrapping it in Angular / RX / Typescript with RXJS Observa
 
 [![Join the chat at https://gitter.im/gun-angular/Lobby](https://badges.gitter.im/gun-angular/Lobby.svg)](https://gitter.im/gun-angular/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
+[![Join the chat at https://gitter.im/gun-rx/Lobby](https://badges.gitter.im/gun-rx/Lobby.svg)](https://gitter.im/gun-rx/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+Learning Gun DB while wrapping it in Angular / RX / Typescript with RXJS Observables.
+
+[![Join the chat at https://gitter.im/gun-angular/Lobby](https://badges.gitter.im/gun-angular/Lobby.svg)](https://gitter.im/gun-angular/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 ## What is this?
 
 - Very early stage, don't use in production (you shouldn't probably use Gun yet either), but feel free to look, play around, and give me your feedback.
