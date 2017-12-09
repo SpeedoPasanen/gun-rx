@@ -10,8 +10,7 @@
 ## ChangeLog
 - Published what's in src/app/gun-angular to npm. To try: 
 - In your AppModule or other module you want to use GunAngular in, add this:
-
- `GunAngularModule.forRoot({ peers: [location.origin + '/gun'] })
+ `GunAngularModule.forRoot({ peers: [location.origin + '/gun'] })`
 
 ## Using
 - Run `npm install gun-angular --save` in your Angular project root folder.
