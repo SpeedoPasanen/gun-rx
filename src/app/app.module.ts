@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { GunAngularModule } from './gun-angular/gun-angular.module';
 
 
 @NgModule({
@@ -10,7 +11,8 @@ import { AppComponent } from './app.component';
     AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    GunAngularModule.forRoot({ peers: [location.origin + '/gun'] })
   ],
   providers: [],
   bootstrap: [AppComponent]

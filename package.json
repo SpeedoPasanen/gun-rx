@@ -8,8 +8,10 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "pack": "ng-packagr -p ng-package.json"
   },
+  "author": "@funkizer",
   "private": true,
   "dependencies": {
     "@angular/animations": "^5.0.0",
@@ -21,7 +23,10 @@
     "@angular/platform-browser": "^5.0.0",
     "@angular/platform-browser-dynamic": "^5.0.0",
     "@angular/router": "^5.0.0",
+    "@types/lodash": "^4.14.88",
     "core-js": "^2.4.1",
+    "gun": "^0.9.2",
+    "lodash": "^4.17.4",
     "rxjs": "^5.5.2",
     "zone.js": "^0.8.14"
   },
@@ -41,6 +46,7 @@
     "karma-coverage-istanbul-reporter": "^1.2.1",
     "karma-jasmine": "~1.1.0",
     "karma-jasmine-html-reporter": "^0.2.2",
+    "ng-packagr": "^1.6.0",
     "protractor": "~5.1.2",
     "ts-node": "~3.2.0",
     "tslint": "~5.7.0",

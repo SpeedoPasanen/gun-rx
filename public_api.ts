@@ -1,0 +1,1 @@
+export * from './src/app/gun-angular/gun-angular.module';
