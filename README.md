@@ -1,6 +1,8 @@
 # GunAngular
 Learning Gun DB while wrapping it in Angular / RX / Typescript with RXJS Observables.
 
+** NOTE: this is all dated, refactoring from an angular service to a module usable with or without any framework. **
+
 [![Join the chat at https://gitter.im/gun-angular/Lobby](https://badges.gitter.im/gun-angular/Lobby.svg)](https://gitter.im/gun-angular/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 ## What is this?
