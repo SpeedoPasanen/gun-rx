@@ -13,7 +13,7 @@ Learning Gun DB while wrapping it in Angular / RX / Typescript with RXJS Observa
 - [Gun](http://gun.js.org) - a realtime p2p database built on JS that runs in browser and server(s), created by [Mark Nadal / @amark](https://github.com/amark) 
 - [Angular](https://angular.io)
 - [Related videos in Youtube](https://www.youtube.com/results?search_query=mark+nadal)
-- [Gitter](https://gitter.im/gun-angular)
+- [Gitter](https://gitter.im/gun-rx)
 - [GitHub](https://github.com/funkizer/gun-rx)
 - [Twitter: @funkizer](https://twitter.com/funkizer)
 
