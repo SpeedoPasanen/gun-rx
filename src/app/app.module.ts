@@ -12,7 +12,7 @@ import { GunAngularModule } from './gun-angular/gun-angular.module';
   ],
   imports: [
     BrowserModule,
-    GunAngularModule.forRoot({ peers: [location.origin + '/gun'] })
+    GunAngularModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

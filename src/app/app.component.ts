@@ -1,6 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, Inject } from '@angular/core';
 import { OnInit } from '@angular/core/src/metadata/lifecycle_hooks';
 import { GunRef } from './gun-angular/gun-ref';
+import { GunAngularService } from './gun-angular/gun-angular.service';
+import { GunAngularOptions } from './gun-angular/gun-angular-options';
 
 @Component({
   selector: 'app-root',
@@ -8,7 +10,13 @@ import { GunRef } from './gun-angular/gun-ref';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  constructor(private db: GunRef) { }
+  private db: GunRef;
+  constructor(
+    private gunService: GunAngularService
+  ) {
+    this.db = gunService.db;
+    this.db.opt({ peers: [location.origin + '/gun'] });
+  }
   ngOnInit() {
 
     this.db.get('test')

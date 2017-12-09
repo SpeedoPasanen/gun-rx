@@ -2,12 +2,10 @@ import * as Gun from 'gun/gun';
 import { Observable } from 'rxjs/Observable';
 import * as _ from 'lodash';
 import { GunAngularOptions } from './gun-angular-options';
-import { Inject, Injectable } from '@angular/core';
-@Injectable()
 export class GunRef {
     gun: Gun;
     constructor(
-        @Inject('gunAngularOptions') options?
+        options?: GunAngularOptions
     ) {
         this.gun = new Gun();
         if (!!options) { this.gun.opt(options); }
