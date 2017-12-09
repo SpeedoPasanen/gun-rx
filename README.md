@@ -2,7 +2,7 @@
 
 ## What is this?
 - Learning Gun DB while wrapping it in Angular / Typescript with RXJS Observables.
-- Very early stage, don't use, but feel free to look, play around, and give me your feedback.
+- Very early stage, don't use in production (you shouldn't probably use Gun yet either), but feel free to look, play around, and give me your feedback.
 
 ## Development server
 
