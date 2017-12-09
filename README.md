@@ -1,5 +1,5 @@
 # GunAngular
-Learning [Gun](http://gun.js.org) DB while wrapping it in Angular / Typescript with RXJS Observables.
+Learning Gun DB while wrapping it in Angular / Typescript with RXJS Observables.
 
 [![Join the chat at https://gitter.im/gun-angular/Lobby](https://badges.gitter.im/gun-angular/Lobby.svg)](https://gitter.im/gun-angular/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
@@ -15,7 +15,7 @@ Learning [Gun](http://gun.js.org) DB while wrapping it in Angular / Typescript w
 - [Related videos in Youtube](https://www.youtube.com/results?search_query=mark+nadal)
 - [Gitter](https://gitter.im/gun-angular)
 - [GitHub](https://github.com/funkizer/gun-angular)
-- [Twitter: @kooditonttu](https://twitter.com/kooditonttu)
+- [Twitter: @funkizer](https://twitter.com/funkizer)
 
 ## Using
 - Run `npm install gun-angular --save` in your Angular project root folder.
