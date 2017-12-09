@@ -7,6 +7,11 @@
 - Wraps (at some point) all gun methods in the typed world, easy to use with Angular or any other or no framework.
 - "Pet project" developed on limited free time.
 
+## Links
+- [Gitter](https://gitter.im/gun-angular)
+- [GitHub](https://github.com/funkizer/gun-angular)
+- [Twitter: @kooditonttu](https://twitter.com/kooditonttu)
+
 ## ChangeLog
 - Published what's in src/app/gun-angular to npm. To try: 
 - In your AppModule or other module you want to use GunAngular in, add this:
