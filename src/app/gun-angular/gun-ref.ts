@@ -6,7 +6,6 @@ import { Inject, Injectable } from '@angular/core';
 @Injectable()
 export class GunRef {
     gun: Gun;
-    stopped = false;
     constructor(
         @Inject('gunAngularOptions') options?
     ) {
@@ -48,15 +47,16 @@ export class GunRef {
     }
     on<T>(): Observable<T> {
         return Observable.create(o => {
+            let stopped = false;
             this.gun.on((data: T, key, at, ev) => {
-                if (this.stopped) {
+                if (stopped) {
                     o.complete();
                     return ev.off();
                 }
                 o.next(this.extractData(data));
             });
             return () => {
-                this.stopped = true;
+                stopped = true;
             };
         });
     }
