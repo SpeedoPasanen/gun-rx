@@ -3,6 +3,7 @@
 ## What is this?
 - Learning [Gun](http://gun.js.org) DB while wrapping it in Angular / Typescript with RXJS Observables.
 - Very early stage, don't use in production (you shouldn't probably use Gun yet either), but feel free to look, play around, and give me your feedback.
+- Some point in the future, planning to publish as a separate module in npm (what's now in src/app/gun-angular).
 
 ## Development server
 
