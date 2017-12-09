@@ -1,5 +1,7 @@
 # GunAngular
 
+[![Join the chat at https://gitter.im/gun-angular/Lobby](https://badges.gitter.im/gun-angular/Lobby.svg)](https://gitter.im/gun-angular/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 ## What is this?
 
 - Learning [Gun](http://gun.js.org) DB while wrapping it in Angular / Typescript with RXJS Observables.
