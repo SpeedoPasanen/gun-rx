@@ -1,6 +1,6 @@
 {
   "name": "gun-angular",
-  "version": "0.0.0",
+  "version": "0.0.001",
   "license": "MIT",
   "scripts": {
     "ng": "ng",
