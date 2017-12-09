@@ -2,9 +2,14 @@
   "name": "gun-angular",
   "version": "0.0.001",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/funkizer/gun-angular"
+  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
+    "serve-aot": "ng serve --aot",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",

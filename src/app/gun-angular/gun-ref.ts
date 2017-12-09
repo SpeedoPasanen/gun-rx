@@ -31,6 +31,9 @@ export class GunRef {
     set(data: any): GunRef {
         return GunRef.create(this.gun.set(data));
     }
+    back(): GunRef {
+        return GunRef.create(this.gun.back());
+    }
     val<T>(): Observable<T> {
         return Observable.create(o => {
             this.gun.val((data, key, at, ev) => {

@@ -1,3 +1,3 @@
-export class GunAngularOptions {
-    peers: string[] = [];
+export interface GunAngularOptions {
+    peers?: string[];
 }

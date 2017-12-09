@@ -11,7 +11,7 @@ import * as Gun from 'gun';
   exports: []
 })
 export class GunAngularModule {
-  static forRoot(config: GunAngularOptions = new GunAngularOptions()) {
+  static forRoot(config?: GunAngularOptions) {
     return {
       ngModule: GunAngularModule,
       providers: [GunRef, { provide: 'gunAngularOptions', useValue: config }]
