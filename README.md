@@ -8,6 +8,7 @@ Learning Gun DB while wrapping it in Angular / RX / Typescript with RXJS Observa
 - Very early stage, don't use in production (you shouldn't probably use Gun yet either), but feel free to look, play around, and give me your feedback.
 - Wraps (at some point) all gun methods in the typed world, easy to use with Angular or any other or no framework.
 - "Pet project" developed on limited free time.
+- Should work with Angular, React or any framework, or without any. Depends only on [RXJS](https://github.com/Reactive-Extensions/RxJS).
 
 ## Links
 - [Gun](http://gun.js.org) - a realtime p2p database built on JS that runs in browser and server(s), created by [Mark Nadal / @amark](https://github.com/amark) 
