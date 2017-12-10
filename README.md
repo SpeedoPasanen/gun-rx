@@ -9,7 +9,7 @@ Learning Gun DB while wrapping it in RXJS Observables & Typescript.
 - Aims to wrap all gun methods in [RXJS](https://github.com/reactivex/rxjs) Observables
 - Should work with Angular, React, any framework, or without any. 
 - "Pet project" developed on limited free time.
-- Like Gun, this runs fine entirely in a browser, without any server. To sync and persist data, you need at least one. Follow instructions on [github.com/amark/gun](https://github.com/amark/gun) about setting up a NodeJS server.
+- Like Gun, this runs fine entirely in a browser, without any server. To sync and persist data, you need at least one. Follow instructions on [github.com/amark/gun](https://github.com/amark/gun) on how to spin up a NodeJS server.
 
 ## What's Gun?
 A realtime p2p database built on JS that runs in a browser and server(s), created by [Mark Nadal / @amark](https://github.com/amark). Graphs, documents, key-value, you name it. Read more: [gun.js.org](http://gun.js.org)
@@ -80,11 +80,19 @@ Inject GunRef to a component:
   private subs:Subscription[] = [];
   constructor(private db: GunRef) { } 
   onInit() {
+    const testNode = this.db.get('test');
     this.subs = [
-      this.db.get('test').on().subscribe(data => { doSomethingWith(data) })
+      // Hot observable, keeps getting updates:
+      testNode.on().subscribe(data => { doSomethingWith(data) })
     ];
+
+    // Cold observable, only gets data once:
+    testNode.val().subscribe(data => { doSomethingWith(data) });
     
-    this.db.get('test').put({testing: true});
+    testNode.put({testing: true});
+    setTimeout(()=> {
+      testNode.put({testing: true, timestamp: new Date().getTime()})
+    }, 2000);
   }   
 ```
 **Always** unsubscribe when you leave the component, to avoid memory leaks:
@@ -104,7 +112,7 @@ Inject GunRef to a component:
 And in your template:
 ```
 <div *ngIf="(data$|async); let data">
-  Now *data* is just a JS object in this div's scope: {data|json}
+  Now *data* is a plain JS object or array in this div's scope: {{ data|json }}
 </div>
 ```
 
@@ -116,5 +124,6 @@ And in your template:
 
 ## Targets
 
-- Provide an API as close as possible to Gun, with strong typing, Observables and documenting-by-code (intentful names, good comments).
+- Provide an API as close as possible to Gun, with strong typing, Observables and documenting-by-code (intentful names, good comments)
+- Preserve Gun's logic in chaining method calls
 - Evolve as Gun evolves
