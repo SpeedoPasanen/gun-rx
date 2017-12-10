@@ -51,7 +51,7 @@ this.db.get('test').put({testing: true});
 .on() returns a hot Observable which keeps streaming changes to you indefinately. So remember to call `subscription.unsubscribe()` when the view is destroyed or you don't want any more updates. Not doing this will result in memory leaks and other unwanted stuff to happen.
 
 ## Using with NodeJS?
-I don't see why it wouldn't *just work*. Let me know if you try.
+I don't see why this wouldn't *just work* on the server, as long as your NodeJS version is recent enough to support import/export. Let me know if you try.
 
 ## Using with Angular
 If you don't have an angular project yet, run `ng new my-gun-rx-app`
