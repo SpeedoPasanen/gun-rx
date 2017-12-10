@@ -87,7 +87,7 @@ Inject GunRef to a component:
     this.db.get('test').put({testing: true});
   }   
 ```
-**Always** unsubscribe when you leave the component, to avoid memory leaks. Usually the best place for unsubscribing is ngOnDestroy() {}. Remember to also make your component implement OnDestroy
+**Always** unsubscribe when you leave the component, to avoid memory leaks:
 ```
   onDestroy() {
     this.subs.forEach(sub => sub.unsubscribe());
