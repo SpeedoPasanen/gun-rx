@@ -102,7 +102,7 @@ Inject GunRef to a component:
   }
 ```
 
-**Better yet:** Use the awesome Angular's async pipe with the `*ngIf; let` -syntax. Then you don't need to worry about subscriptions/unsubscribing yourself.
+**Better yet:** Use the awesome Angular's async pipe with the `*ngIf; let` -syntax. Then you don't need to worry about subscribing & unsubscribing yourself.
 ```
    data$: Observable<any>
    onInit() {
