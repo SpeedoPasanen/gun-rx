@@ -12,7 +12,7 @@ Learning Gun DB while wrapping it in RXJS Observables & Typescript.
 - Like Gun, this runs fine entirely in a browser, without any server. To sync and persist data, you need at least one. Follow instructions on [github.com/amark/gun](https://github.com/amark/gun) about setting up a NodeJS server.
 
 ## What's Gun?
-A realtime p2p database built on JS that runs in a browser and server(s), created by [Mark Nadal / @amark](https://github.com/amark). Got graphs, documents, key-value, you name it. Read more: [gun.js.org](http://gun.js.org)
+A realtime p2p database built on JS that runs in a browser and server(s), created by [Mark Nadal / @amark](https://github.com/amark). Graphs, documents, key-value, you name it. Read more: [gun.js.org](http://gun.js.org)
 
 ## Links
 - [Gun](http://gun.js.org)
