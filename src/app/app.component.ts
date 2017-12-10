@@ -1,8 +1,7 @@
 import { Component, Inject } from '@angular/core';
 import { OnInit } from '@angular/core/src/metadata/lifecycle_hooks';
-import { GunRef } from './gun-angular/gun-ref';
 import { GunAngularService } from './gun-angular/gun-angular.service';
-import { GunAngularOptions } from './gun-angular/gun-angular-options';
+import { GunRef } from './gun-rx/gun-ref';
 
 @Component({
   selector: 'app-root',

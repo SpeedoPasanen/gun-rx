@@ -1,11 +1,11 @@
 import * as Gun from 'gun/gun';
 import { Observable } from 'rxjs/Observable';
 import * as _ from 'lodash';
-import { GunAngularOptions } from './gun-angular-options';
+import { GunOptions } from './gun-options';
 export class GunRef {
     gun: Gun;
     constructor(
-        options?: GunAngularOptions
+        options?: GunOptions
     ) {
         this.gun = new Gun();
         if (!!options) { this.gun.opt(options); }
@@ -15,7 +15,7 @@ export class GunRef {
         newRef.gun = gun;
         return newRef;
     }
-    opt(options: GunAngularOptions): GunRef {
+    opt(options: GunOptions): GunRef {
         this.gun.opt(options);
         return this;
     }

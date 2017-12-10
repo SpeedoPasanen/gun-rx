@@ -1,5 +1,5 @@
 import { Injectable, Inject } from '@angular/core';
-import { GunRef } from './gun-ref';
+import { GunRef } from '../gun-rx/gun-ref';
 
 @Injectable()
 export class GunAngularService {

@@ -1,16 +1,14 @@
-# GunAngular
-Learning Gun DB while wrapping it in Angular / RX / Typescript with RXJS Observables.
-
-** NOTE: this is all dated, refactoring from an angular service to a module usable with or without any framework. **
+# gun-rx
+Learning Gun DB while wrapping it in RXJS Observables & Typescript.
 
 [![Join the chat at https://gitter.im/gun-angular/Lobby](https://badges.gitter.im/gun-angular/Lobby.svg)](https://gitter.im/gun-angular/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-## What is this?
+## What's this?
 
-- Very early stage, don't use in production (you shouldn't probably use Gun yet either), but feel free to look, play around, and give me your feedback.
-- Wraps (at some point) all gun methods in the typed world, easy to use with Angular or any other or no framework.
+- Very early, don't use in production. Feel free to look, play around and let me know what you think.
+- Aims to wrap all gun methods in [RXJS](https://github.com/reactivex/rxjs) Observables
+- Should work with Angular, React, any framework, or without any. 
 - "Pet project" developed on limited free time.
-- Should work with Angular, React or any framework, or without any. Depends only on [RXJS](https://github.com/reactivex/rxjs).
 
 ## Links
 - [Gun](http://gun.js.org) - a realtime p2p database built on JS that runs in browser and server(s), created by [Mark Nadal / @amark](https://github.com/amark) 
@@ -20,8 +18,8 @@ Learning Gun DB while wrapping it in Angular / RX / Typescript with RXJS Observa
 - [GitHub](https://github.com/funkizer/gun-rx)
 - [Twitter: @funkizer](https://twitter.com/funkizer)
 
-## Using
-- Run `npm install gun-angular --save` in your Angular project root folder.
+## Using with Angular
+- Run `npm install gun-rx --save` in your Angular project root folder.
 - In your (App)Module, add import:
 `
   imports: [

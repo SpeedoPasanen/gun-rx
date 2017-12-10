@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { GunAngularOptions } from './gun-angular-options';
 import * as Gun from 'gun';
+import { GunOptions } from '../gun-rx/gun-options';
 import { GunAngularService } from './gun-angular.service';
 @NgModule({
   imports: [
@@ -11,7 +11,7 @@ import { GunAngularService } from './gun-angular.service';
   exports: []
 })
 export class GunAngularModule {
-  static forRoot(config?: GunAngularOptions) {
+  static forRoot(config?: GunOptions) {
     return {
       ngModule: GunAngularModule,
       providers: [
