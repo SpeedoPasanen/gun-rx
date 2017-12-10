@@ -76,18 +76,36 @@ const gunOptions: GunOptions = {
 Inject GunRef to a component:
 
 ```  
-constructor(private db: GunRef) { 
+@Component() export class MyComponent implements OnInit, OnDestroy {
+  private subs:Subscription[] = [];
+  constructor(private db: GunRef) { } 
+  onInit() {
+    this.subs = [
+      this.db.get('test').on().subscribe(data => { doSomethingWith(data) })
+    ];
+    
+    this.db.get('test').put({testing: true});
+  }   
+```
+**Always** unsubscribe when you leave the component, to avoid memory leaks. Usually the best place for unsubscribing is ngOnDestroy() {}. Remember to also make your component implement OnDestroy
+```
+  onDestroy() {
+    this.subs.forEach(sub => sub.unsubscribe());
+  }
+```
 
- const subscription = this.db.get('test').on().subscribe(data => { doSomethingWith(data) });
-
-  this.db.get('test').put({testing: true});
-
-  setTimeout(()=>{
-    /* Always remember to unsubscribe when you leave the component, to avoid memory leaks.
-    Usually the best place for unsubscribing is ngOnDestroy() {}. Remember to also make your component implement OnDestroy */
-    subscription.unsubscribe();
-  },2000);
-} 
+**Better yet:** Use the awesome Angular's async pipe with the `*ngIf; let` -syntax. Then you don't need to worry about subscriptions/unsubscribing yourself.
+```
+   data$: Observable<any>
+   onInit() {
+     this.data$ = this.db.get('test').on();
+   }
+```
+And in your template:
+```
+<div *ngIf="(data$|async); let data">
+  Now *data* is just a JS object in this div's scope: {data|json}
+</div>
 ```
 
 ## Running with this repo
