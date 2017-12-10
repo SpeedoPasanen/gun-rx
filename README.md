@@ -31,7 +31,8 @@ The lib is built to ES6 JS, so use your favourite build/transpile tool to suppor
 
 ```
 import { GunRef } from 'gun-rx';
-const gunRef = new GunRef(); // This is your "root" GunRef, you should probably keep it safe and reuse
+const gunRef = new GunRef();
+// This is your "root" GunRef, you should probably keep it safe and reuse
 ```
 To pass options (optional):
 ```
@@ -44,7 +45,9 @@ const gunRef = new GunRef(gunOptions);
 ```
 
 ```
-const subscription = this.db.get('test').on().subscribe(data => { doSomethingWith(data) });
+const subscription = this.db.get('test')
+  .on()
+  .subscribe(data => { doSomethingWith(data) });
 this.db.get('test').put({testing: true});
 ```
 
@@ -112,7 +115,8 @@ Inject GunRef to a component:
 And in your template:
 ```
 <div *ngIf="(data$|async); let data">
-  Now *data* is a plain JS object or array in this div's scope: {{ data|json }}
+  Now *data* is a plain JS object or array in this div's scope:
+  {{ data|json }}
 </div>
 ```
 
