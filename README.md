@@ -82,11 +82,11 @@ Inject GunRef to a component:
   onInit() {
     const testNode = this.db.get('test');
     this.subs = [
-      // Hot observable, keeps getting updates:
+      // Keeps pushing values upon changes to this node:
       testNode.on().subscribe(data => { doSomethingWith(data) })
     ];
 
-    // Cold observable, only gets data once:
+    // Gets data once and completes:
     testNode.val().subscribe(data => { doSomethingWith(data) });
     
     testNode.put({testing: true});
