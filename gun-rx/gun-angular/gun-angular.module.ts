@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import * as Gun from 'gun';
-import { GunOptions } from '../gun-options';
 import { GunAngularService } from './gun-angular.service';
+import { GunOptions } from '../gun-options';
 @NgModule({
   imports: [
     CommonModule

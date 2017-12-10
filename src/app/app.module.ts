@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
-import { GunAngularModule } from './gun-rx/gun-angular/gun-angular.module';
+import { GunAngularModule } from '../../gun-rx/gun-angular/gun-angular.module';
 
 
 @NgModule({
